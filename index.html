@@ -1,34 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>PVC Furniture Website</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vadodara PVC Furniture</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#f5f5f5}
+header{background:#111;color:#fff;padding:15px;text-align:center}
+nav{display:flex;justify-content:center;background:#222}
+nav a{color:#fff;padding:14px 20px;text-decoration:none}
+nav a:hover{background:#ff6600}
+
+.hero{background:url('hero.jpg') center/cover;height:350px;color:white;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero h1{background:rgba(0,0,0,0.6);padding:20px;border-radius:10px}
+
+.section{padding:40px 20px;background:white;margin:15px;border-radius:10px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#fff;padding:15px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.1)}
+.card img{width:100%;border-radius:10px}
+
+.btn{display:inline-block;padding:10px 15px;background:#ff6600;color:#fff;text-decoration:none;border-radius:5px}
+
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:white;
+padding:15px;border-radius:50%;
+font-size:20px;text-decoration:none
+}
+
+footer{background:#111;color:#fff;text-align:center;padding:15px;margin-top:20px}
+</style>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">SHYAM PVC</div>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <h1>All Type of PVC Furniture</h1>
-        <button>Our Works</button>
-        <button>Contact Us</button>
-    </section>
+<header>
+<h1>Vadodara PVC Furniture</h1>
+<p>Modular Kitchen | Wardrobe | TV Unit</p>
+</header>
 
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="card">PVC Kitchen</div>
-        <div class="card">Wardrobes</div>
-        <div class="card">False Ceiling</div>
-    </section>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+<h1>Best PVC Furniture in Vadodara</h1>
+</div>
+
+<div class="section" id="services">
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card">
+<img src="kitchen.jpg">
+<h3>Modular Kitchen</h3>
+</div>
+<div class="card">
+<img src="wardrobe.jpg">
+<h3>Wardrobe</h3>
+</div>
+<div class="card">
+<img src="tv.jpg">
+<h3>TV Unit</h3>
+</div>
+</div>
+</div>
+
+<div class="section" id="gallery">
+<h2>Our Work</h2>
+<div class="grid">
+<img src="pvc-kitchen-vadodara-2.jpg">
+<img src="pvc-kitchen-vadodara-2.jpg">
+<img src="g3.jpg">
+<img src="g4.jpg">
+</div>
+</div>
+
+<div class="section">
+<h2>Why Choose Us</h2>
+<ul>
+<li>100% Waterproof</li>
+<li>Termite Proof</li>
+<li>Long Life Material</li>
+<li>Modern Design</li>
+</ul>
+</div>
+
+<div class="section" id="contact">
+<h2>Contact Us</h2>
+<p>📞 9662436366</p>
+<p>📍 Vadodara, Gujarat</p>
+<a class="btn" href="tel:9662436366">Call Now</a>
+</div>
+
+<a class="whatsapp" href="https://wa.me/919662436366">💬</a>
+
+<footer>
+<p>© 2026 Vadodara PVC Furniture</p>
+</footer>
+
 </body>
 </html>
