@@ -2,33 +2,183 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PVC Furniture Website</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maruti Home Furniture | Best uPVC Furniture in Vadodara</title>
+    <meta name="description" content="Maruti Home Furniture offers high-quality uPVC modular kitchens, wardrobes, and interior design in Vadodara. Waterproof and Termite-proof solutions.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #002c42; /* Dark Blue from competitor style */
+            --accent-color: #fcae40;  /* Professional Orange/Gold */
+            --text-light: #ffffff;
+            --text-dark: #333333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: var(--text-dark); }
+
+        /* Header & Navigation */
+        header {
+            background: var(--primary-color);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo { color: var(--accent-color); font-size: 1.5rem; font-weight: 700; text-transform: uppercase; }
+        
+        nav a { color: var(--text-light); text-decoration: none; margin-left: 20px; font-weight: 500; }
+        nav a:hover { color: var(--accent-color); }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+
+        .cta-button {
+            background: var(--accent-color);
+            color: var(--primary-color);
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        /* Services Section */
+        .services { padding: 80px 5%; background: #f9f9f9; text-align: center; }
+        .section-title { margin-bottom: 50px; font-size: 2.5rem; color: var(--primary-color); }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover { transform: translateY(-10px); }
+        .service-card h3 { color: var(--accent-color); margin-bottom: 15px; }
+
+        /* Why Us Section */
+        .features { padding: 60px 5%; background: var(--primary-color); color: white; text-align: center; }
+        .feature-list { display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 30px; }
+        .feature-item { margin: 10px; font-weight: 600; border: 1px solid var(--accent-color); padding: 10px 20px; border-radius: 50px; }
+
+        /* Contact/Footer */
+        footer { background: #111; color: #ccc; padding: 40px 5%; text-align: center; }
+        .contact-info { margin-bottom: 20px; }
+        .contact-info p { margin: 5px 0; }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            nav { display: none; } /* Simplified for mobile */
+        }
+    </style>
 </head>
 <body>
+
     <header>
+        <div class="logo">Maruti Home Furniture</div>
         <nav>
-            <div class="logo">SHYAM PVC</div>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact</li>
-            </ul>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>All Type of PVC Furniture</h1>
-        <button>Our Works</button>
-        <button>Contact Us</button>
+    <section class="hero" id="home">
+        <h1>Modern uPVC Furniture Solutions</h1>
+        <p>100% Waterproof | Termite Proof | Lifetime Durability</p>
+        <a href="tel:+919662436366" class="cta-button">Call Now for Free Quotation</a>
     </section>
 
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="card">PVC Kitchen</div>
-        <div class="card">Wardrobes</div>
-        <div class="card">False Ceiling</div>
+    <section class="services" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Modular Kitchen</h3>
+                <p>Designer uPVC kitchens that stay new for years. Heat and moisture resistant.</p>
+            </div>
+            <div class="service-card">
+                <h3>Wardrobes</h3>
+                <p>Space-saving and elegant wardrobes with custom internal partitions.</p>
+            </div>
+            <div class="service-card">
+                <h3>TV Units</h3>
+                <p>Modern TV cabinet designs that enhance your living room aesthetics.</p>
+            </div>
+            <div class="service-card">
+                <h3>PVC Doors</h3>
+                <p>High-quality epoxy finished doors, perfect for bathrooms and main entrances.</p>
+            </div>
+        </div>
     </section>
+
+    <section class="features">
+        <h2>Why Choose Maruti Home Furniture?</h2>
+        <div class="feature-list">
+            <div class="feature-item">Waterproof</div>
+            <div class="feature-item">Termite Proof</div>
+            <div class="feature-item">Fire Retardant</div>
+            <div class="feature-item">Eco-Friendly</div>
+            <div class="feature-item">Custom Designs</div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Vadodara, Gujarat, India</p>
+            <p>Email: info@marutihomefurniture.com</p>
+            <p>Call: +91 9662436366</p>
+        </div>
+        <p>&copy; 2026 Maruti Home Furniture. All Rights Reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/919662436366" class="whatsapp-float" target="_blank">
+        Chat on WhatsApp
+    </a>
+
 </body>
 </html>
